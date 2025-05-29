@@ -23,7 +23,7 @@ class ContainerPlateform extends StatelessWidget {
         padding: EdgeInsets.all(5),
         margin: EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: Colors.blueAccent,
+          color: Colors.blue.shade700,
           borderRadius: BorderRadius.circular(15)
         ),
         child: Row(
