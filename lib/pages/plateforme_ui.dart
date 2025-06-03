@@ -31,7 +31,9 @@ class PlateformeUi extends StatelessWidget {
                  logoDomain: 'assets/images/education.gif',
                  titleDomain: 'BNN-ESU',
                  subtitleDomain: 'Livres, Videos, audios et images',
-                 onTap: (){},
+                 onTap: (){
+                  context.push('/bnn_esu');
+                 },
               ),
               ContainerPlateform(
                 logoDomain: 'assets/images/assistant-ia.gif',

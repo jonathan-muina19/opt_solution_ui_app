@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:opt_solution_ui/pages/bnn_esu.dart';
 import 'package:opt_solution_ui/pages/opt_screen.dart';
 import 'package:opt_solution_ui/pages/plateforme_ui.dart';
 import 'package:opt_solution_ui/pages/splash_screen.dart';
@@ -22,8 +23,15 @@ final _router = GoRouter(
     GoRoute(
       path: '/plateforme_ui',
       builder: (context, state) => const PlateformeUi()
-    )
-    
+    ),
+    GoRoute(
+      path: '/bnn_esu',
+      builder: (context, state) =>  BnnEsu()
+    ),
+    GoRoute(
+      path: '/tableau_bord',
+      builder: (context, state) =>  PlateformeUi()
+    ),   
   ]
 );
 
