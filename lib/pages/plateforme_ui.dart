@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:opt_solution_ui/widgets/container_plateform.dart';
 
 class PlateformeUi extends StatelessWidget {
+
+
   const PlateformeUi({super.key});
 
   @override
@@ -40,7 +43,9 @@ class PlateformeUi extends StatelessWidget {
                   titleDomain: 'OPT SOLUTION',
                   subtitleDomain: 'Generer les bons de paiements',
                   logoDomain: 'assets/images/argent.gif',
-                  onTap: (){},
+                  onTap: (){
+                    context.push('/opt_solution');
+                  },
               ),
               SizedBox(height: 350),
               Text('©Powered by Jordan-Muina')
