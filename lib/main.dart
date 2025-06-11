@@ -3,12 +3,14 @@ import 'package:go_router/go_router.dart';
 import 'package:opt_solution_ui/pages/bnn_esu.dart';
 import 'package:opt_solution_ui/pages/opt_screen.dart';
 import 'package:opt_solution_ui/pages/plateforme_ui.dart';
+import 'package:opt_solution_ui/pages/signup.dart';
 import 'package:opt_solution_ui/pages/splash_screen.dart';
 
 
 void main() {
   runApp(MyApp());
 }
+
 
 final _router = GoRouter(
   routes: [
@@ -31,7 +33,11 @@ final _router = GoRouter(
     GoRoute(
       path: '/tableau_bord',
       builder: (context, state) =>  PlateformeUi()
-    ),   
+    ),
+    GoRoute(
+      path: '/signup',
+      builder: (context, state) =>  Signup()
+    ),     
   ]
 );
 
@@ -49,11 +55,8 @@ class MyApp extends StatelessWidget {
             color: Colors.white
           )
         ),
-        
       ),
       debugShowCheckedModeBanner: false,
-
-
     );
   }
 }

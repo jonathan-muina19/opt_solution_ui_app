@@ -83,7 +83,6 @@ class BnnEsu extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              SizedBox(width: 8),
                               TextButton(
                                 child: Text('Mot de passe oublie?', 
                                 style: TextStyle(
@@ -103,7 +102,9 @@ class BnnEsu extends StatelessWidget {
                                 fontWeight: FontWeight.bold
                                   ),
                                 ),
-                                onPressed: (){},                               
+                                onPressed: (){
+                                  context.push('/signup');
+                                },                               
                               ),
                             ],
                           )

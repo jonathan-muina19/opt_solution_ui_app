@@ -39,7 +39,9 @@ class PlateformeUi extends StatelessWidget {
                 logoDomain: 'assets/images/assistant-ia.gif',
                 titleDomain: 'ROBOT Inteligence Artificielle',
                 subtitleDomain: 'Assistant Moderne de la BNN',
-                onTap: (){},
+                onTap: (){
+                  context.push('/bnn_esu');
+                },
               ),
               ContainerPlateform(
                   titleDomain: 'OPT SOLUTION',
